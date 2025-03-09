@@ -12,7 +12,7 @@ jobs:
   test-run:
     name: Run tests
     if: github.event.pull_request.user.login != 'gitlocalize-app[bot]'
-    runs-on: ubuntu-latest
+    runs-on: windows
     env:
       NODE_OPTIONS: --max-old-space-size=8192
 
